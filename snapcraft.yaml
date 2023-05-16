@@ -1,9 +1,9 @@
 name:  mega-pinball-windows
-title:  Snaop Mega Pinball
+title:  Snap Mega Pinball
 version: "1.0"
-summary:   Update to the arcade classic
+summary:  Nice pinball game
 description: |
-  Update to the arcade classic
+  Nice pinball game
 
 grade: stable
 icon: mega-pinball-windows_icon.png
