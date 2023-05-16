@@ -1,0 +1,603 @@
+
+MenuWrapper {
+
+ x = 80; y = 60;
+ name = "MainMenu"; 
+
+// Start button ----------------------------------------------------------------------
+ MenuButton {
+
+  SoundPack {
+   up = "data\menu\mainmenu\sfx\up.wav";
+   down = "data\menu\mainmenu\sfx\down.wav";
+  };  
+
+  x  = 270;  y  = 118; 
+  tx = 350;  ty = 178;
+  tw = 54;   th = 49;
+
+  MenuPicture {
+   x = 0; y = 0;
+   filename = "data\menu\mainmenu\controls\button_light.bmp";
+   temp = 1;
+  };
+
+  MenuWrapper {
+	x = -270; y = -118;	
+
+	MenuEditControl {
+
+ 		name = "PLAYER_NAME";	
+
+		x = 24; y = 325;
+		tx = 104; ty = 385;
+		tw = 114; th = 48;
+		cx = 120; cy = 10;
+
+		font = "data\fonts\chicago22.fnt";
+		Caption = "Player1";
+
+		CFStart = "data\cursor\text";
+		CFEnd = ".bmp";
+		CFCount = 2;
+		CFFrTime = 0.250000;
+
+		MenuPicture {
+			x = 0; y = 0;
+			filename = "data\menu\mainmenu\controls\name_light.bmp";
+			temp = 1;
+		};
+	};
+
+	MenuButton {
+		name = "PREVGAME";
+		x  = 348;  y  = 369; 
+		tx = 428;  ty = 429;
+		tw = 77;   th = 33;	
+
+		SoundPack {
+			up = "data\menu\mainmenu\sfx\up.wav";
+			down = "data\menu\mainmenu\sfx\down.wav";
+		};    
+
+		MenuPicture {
+			x = 0; y = 0;
+			filename = "data\menu\mainmenu\controls\l_small_light.bmp";
+			temp = 1;
+		};
+	};
+
+	MenuButton {
+		name = "NEXTGAME";
+		x  = 555;  y  = 370; 
+		tx = 635;  ty = 430;
+		tw = 77;   th = 33;	
+
+		SoundPack {
+			up = "data\menu\mainmenu\sfx\up.wav";
+			down = "data\menu\mainmenu\sfx\down.wav";
+		};    
+
+		MenuPicture {
+			x = 0; y = 0;
+			filename = "data\menu\mainmenu\controls\r_small_light.bmp";
+			temp = 1;
+		};
+	};
+
+	MenuButton {
+		name = "DEACTIVATEMENU";
+		x  = 48;   y  = 419; 
+		tx = 128;  ty = 479;
+		tw = 77;   th = 33;	
+
+		SoundPack {
+			up = "data\menu\mainmenu\sfx\up.wav";
+			down = "data\menu\mainmenu\sfx\down.wav";
+		};    
+
+		MenuPicture {
+			x = 0; y = 0;
+			filename = "data\menu\mainmenu\controls\l_small_light.bmp";
+			temp = 1;
+		};
+	};
+
+	MenuButton {
+		name = "START";
+		x  = 513;  y  = 419; 
+		tx = 593;  ty = 479;
+		tw = 76;   th = 33;	
+
+		SoundPack {
+			up = "data\menu\mainmenu\sfx\up.wav";
+			down = "data\menu\mainmenu\sfx\down.wav";
+		};    
+
+		MenuPicture {
+			x = 0; y = 0;
+			filename = "data\menu\mainmenu\controls\r_small_light.bmp";
+			temp = 1;
+		};
+	};
+
+	MenuAnimation	{
+		name		= "GAMESELECTOR";
+		x			= 403;	
+		y			= 10;
+		filestart	= "data\menu\mainmenu\pinbjack\a";
+		fileend		= ".bmp";
+		filecount	= 72;
+		frametime	= 0.042;
+		playnow		= 0;
+		temp		= 1;
+	};
+
+	MenuPicture {
+		x = 0; y = 0;
+		filename = "data\menu\mainmenu\screens\playername.bmp";
+		transparent = 0;
+		temp = 1;
+	};
+  };
+ };
+// ***********************************************************************************
+
+// Options Button --------------------------------------------------------------------
+ MenuButton {
+
+  SoundPack {
+   up = "data\menu\mainmenu\sfx\up.wav";
+   down = "data\menu\mainmenu\sfx\down.wav";
+  };  
+
+  x  = 270;  y  = 187; 
+  tx = 350;  ty = 247;
+  tw = 54;   th = 49;
+
+  MenuPicture {
+   x = 0; y = 0;
+   filename = "data\menu\mainmenu\controls\button_light.bmp";
+   temp = 1;
+  };
+
+  MenuWrapper {
+
+   x = -270;	y = -187;
+
+   MenuButton {
+	name = "DEACTIVATEMENU";
+	x  = 48;   y  = 419; 
+    tx = 128;  ty = 479;
+    tw = 77;   th = 33;	
+
+    SoundPack {
+     up = "data\menu\mainmenu\sfx\up.wav";
+     down = "data\menu\mainmenu\sfx\down.wav";
+    };    
+
+    MenuPicture {
+     x = 0; y = 0;
+     filename = "data\menu\mainmenu\controls\l_small_light.bmp";
+	 temp = 1;
+    };
+   };
+
+   //Video
+   MenuButton {	
+	x  = 303;	y  = 110; 
+    tx = 388;	ty = 170;
+    tw = 113;	th = 49;	
+
+    SoundPack {
+     up = "data\menu\mainmenu\sfx\up.wav";
+     down = "data\menu\mainmenu\sfx\down.wav";
+    };    
+
+    MenuPicture {
+     x = 0; y = 0;
+     filename = "data\menu\mainmenu\controls\r_great_light.bmp";
+	 temp = 1;
+    };
+
+	MenuWrapper {
+		x = -303; y = -110;
+
+		MenuSwitch {
+			name = "TRUECOLOR";
+			x  = 160; y  = 126;
+			tx = 240; ty = 186;
+			tw = 110; th = 150;
+			MenuPicture {
+				x = 0; y = 0;
+				filename = "data\menu\mainmenu\controls\g_button_light.bmp";
+				temp = 1;
+			};			
+			MenuPicture {
+				x = 0; y = 102;
+				filename = "data\menu\mainmenu\controls\g_button_light.bmp";
+				temp = 1;
+			};
+		};
+
+		MenuButton {
+			name = "DEACTIVATEMENU";
+			x  = 48;   y  = 419; 
+			tx = 128;  ty = 479;
+			tw = 77;   th = 33;	
+
+			SoundPack {
+				up = "data\menu\mainmenu\sfx\up.wav";
+				down = "data\menu\mainmenu\sfx\down.wav";
+			};    
+
+			MenuPicture {
+				x = 0; y = 0;
+				filename = "data\menu\mainmenu\controls\l_small_light.bmp";
+				temp = 1;
+			};
+		};
+
+		MenuPicture {
+			x = 0; y = 0;
+			filename = "data\menu\mainmenu\screens\colors.bmp";
+			transparent = 0;
+			temp = 1;
+		};
+	};
+   };
+
+   // Controls
+   MenuButton {	
+	x  = 195;	y  = 211; 
+    tx = 275;	ty = 271;
+    tw = 113;	th = 49;	
+
+    SoundPack {
+     up = "data\menu\mainmenu\sfx\up.wav";
+     down = "data\menu\mainmenu\sfx\down.wav";
+    };    
+
+    MenuPicture {
+     x = 0; y = 0;
+     filename = "data\menu\mainmenu\controls\r_great_light.bmp";
+	 temp = 1;
+    };
+
+	MenuWrapper {
+		x = -195; y = -211;
+
+		MenuGetControl {	
+			name = "LEFTHANDLE_CONTROL";
+			x = 131; y = 119;
+			tx = 211; ty = 179;
+			tw = 213; th = 48;
+			cx = 215; cy = 8;
+
+			font = "data\fonts\chicago22.fnt";
+			Caption = "";
+
+			//CFStart = "data\cars\vette\a";
+			//CFEnd = ".bmp";
+			//CFCount = 1;
+
+			MenuPicture {
+				x = 0; y = 0;
+				filename = "data\menu\mainmenu\controls\left_light.bmp";
+				temp = 1;
+			};
+		};
+
+		MenuGetControl {	
+			name = "RIGHTHANDLE_CONTROL";
+			x = 131; y = 187;
+			tx = 211; ty = 247;
+			tw = 213; th = 48;
+			cx = 215; cy = 8;
+
+			font = "data\fonts\chicago22.fnt";
+			Caption = "";
+
+			//CFStart = "data\cars\vette\a";
+			//CFEnd = ".bmp";
+			//CFCount = 1;
+
+			MenuPicture {
+				x = 0; y = 0;
+				filename = "data\menu\mainmenu\controls\right_light.bmp";
+				temp = 1;
+			};
+		};
+
+		MenuGetControl {	
+			name = "TILT_CONTROL";
+			x = 131; y = 252;
+			tx = 211; ty = 312;
+			tw = 213; th = 48;
+			cx = 215; cy = 8;
+
+			font = "data\fonts\chicago22.fnt";
+			Caption = "";
+
+			//CFStart = "data\cars\vette\a";
+			//CFEnd = ".bmp";
+			//CFCount = 1;
+
+			MenuPicture {
+				x = 0; y = 0;
+				filename = "data\menu\mainmenu\controls\tilt_light.bmp";
+				temp = 1;
+			};
+		};
+
+		MenuGetControl {	
+			name = "LAUNCH_CONTROL";
+			x = 131; y = 318;
+			tx = 211; ty = 378;
+			tw = 213; th = 48;
+			cx = 215; cy = 8;
+
+			font = "data\fonts\chicago22.fnt";
+			Caption = "";
+
+			//CFStart = "data\cars\vette\a";
+			//CFEnd = ".bmp";
+			//CFCount = 1;
+
+			MenuPicture {
+				x = 0; y = 0;
+				filename = "data\menu\mainmenu\controls\launch_light.bmp";
+				temp = 1;
+			};
+		};
+
+		MenuButton {
+			name = "DEACTIVATEMENU";
+			x  = 48;   y  = 419; 
+			tx = 128;  ty = 479;
+			tw = 77;   th = 33;	
+
+			SoundPack {
+				up = "data\menu\mainmenu\sfx\up.wav";
+				down = "data\menu\mainmenu\sfx\down.wav";
+			};    
+
+			MenuPicture {
+				x = 0; y = 0;
+				filename = "data\menu\mainmenu\controls\l_small_light.bmp";
+				temp = 1;
+			};
+		};
+
+		MenuPicture {
+			x = 0; y = 0;
+			filename = "data\menu\mainmenu\screens\controller.bmp";
+			transparent = 0;
+			temp = 1;
+		};
+	};
+   };
+
+   // Audio
+   MenuButton {	
+	x  = 303;	y  = 313; 
+    tx = 388;	ty = 373;
+    tw = 113;	th = 49;	
+
+    SoundPack {
+     up = "data\menu\mainmenu\sfx\up.wav";
+     down = "data\menu\mainmenu\sfx\down.wav";
+    };    
+
+    MenuPicture {
+     x = 0; y = 0;
+     filename = "data\menu\mainmenu\controls\r_great_light.bmp";
+	 temp = 1;
+    };
+
+	MenuWrapper {
+		x = -303; y = -313;
+
+		MenuButton {
+			name = "DEACTIVATEMENU";
+			x  = 48;   y  = 419; 
+			tx = 128;  ty = 479;
+			tw = 77;   th = 33;	
+
+			SoundPack {
+				up = "data\menu\mainmenu\sfx\up.wav";
+				down = "data\menu\mainmenu\sfx\down.wav";
+			};    
+
+			MenuPicture {
+				x = 0; y = 0;
+				filename = "data\menu\mainmenu\controls\l_small_light.bmp";
+				temp = 1;
+			};
+		};
+
+		MenuRoundSlider {
+			name		= "AUDIOVOLUME";
+			x = 32; y = 214;
+			tx = 119; ty = 281;
+			tw = 50; th = 50;
+			cx = 0.1813; cz = 0.5067;
+			px = 0.1575; pz = 0.5150;
+			picx = 475; picy = 28;
+			maxangle	= 3.9166;
+			picname		= "data\menu\mainmenu\controls\soundvolume.bmp";
+			filestart	= "data\menu\mainmenu\krutilka\a";
+			fileend		= ".bmp";
+			filecount	= 37;
+		};
+
+		MenuRoundSlider {
+			name = "CDVOLUME";
+			x = 32; y = 272;
+			tx = 119; ty = 340;
+			tw = 50; th = 50;
+			cx = 0.1800; cz = 0.6033;
+			px = 0.1575; pz = 0.6117;			
+			picx = 475; picy = 26;
+			maxangle	= 3.9166;
+			picname		= "data\menu\mainmenu\controls\soundvolume.bmp";
+			filestart	= "data\menu\mainmenu\krutilka\a";
+			fileend		= ".bmp";
+			filecount	= 37;			
+		};
+
+		MenuPicture {
+			x = 0; y = 0;
+			filename = "data\menu\mainmenu\screens\sound.bmp";
+			transparent = 0;
+			temp = 1;
+		};
+	};
+
+   };
+
+   MenuPicture {
+    x = 0; y = 0;
+    filename = "data\menu\mainmenu\screens\settings.bmp";
+	transparent = 0;
+	temp = 1;
+   };
+
+  };
+
+ };
+// ***********************************************************************************
+
+ MenuButton {
+
+  SoundPack {
+   up = "data\menu\mainmenu\sfx\up.wav";
+   down = "data\menu\mainmenu\sfx\down.wav";
+  };
+
+  name = "EXIT";
+
+  x  = 270;  y  = 393; 
+  tx = 350;  ty = 453;
+  tw = 54;   th = 49;
+
+  MenuPicture {
+   x = 0; y = 0;
+   filename = "data\menu\mainmenu\controls\button_light.bmp";
+   temp = 1;
+  };
+ };
+
+ MenuButton {
+
+  SoundPack {
+   up = "data\menu\mainmenu\sfx\up.wav";
+   down = "data\menu\mainmenu\sfx\down.wav";
+  };  
+
+  x  = 270;  y  = 257; 
+  tx = 350;  ty = 317;
+  tw = 54;   th = 49;
+
+  MenuPicture {
+   x = 0; y = 0;
+   filename = "data\menu\mainmenu\controls\button_light.bmp";
+   temp = 1;
+  };
+
+  MenuWrapper {
+   x = -270; y = -257;
+
+   MenuButton {
+
+    name = "DEACTIVATEMENU";
+
+	x  = 48;   y  = 419; 
+    tx = 128;  ty = 479;
+    tw = 77;   th = 33;	
+
+    SoundPack {
+     up = "data\menu\mainmenu\sfx\up.wav";
+     down = "data\menu\mainmenu\sfx\down.wav";
+    };    
+
+    MenuPicture {
+     x = 0; y = 0;
+     filename = "data\menu\mainmenu\controls\l_small_light.bmp";
+	 temp = 1;
+    };
+
+   };
+
+   MenuPicture {
+    x = 0; y = 0;
+    filename = "data\menu\mainmenu\screens\credits.bmp";
+	transparent = 0;
+	temp = 1;
+   };
+
+  };
+ };
+
+ MenuButton {
+
+  SoundPack {
+   up = "data\menu\mainmenu\sfx\up.wav";
+   down = "data\menu\mainmenu\sfx\down.wav";
+  };  
+
+  x  = 270;  y  = 324; 
+  tx = 350;  ty = 384;
+  tw = 54;   th = 49;
+
+  name = "SCORES_TABLE";
+
+  MenuPicture {
+   x = 0; y = 0;
+   filename = "data\menu\mainmenu\controls\button_light.bmp";
+   temp = 1;
+  };
+
+  MenuWrapper {
+   x = -270; y = -324;      
+
+   MenuButton {
+
+    name = "DEACTIVATEMENU";
+
+	x  = 46;   y  = 418; 
+    tx = 126;  ty = 478;
+    tw = 77;   th = 33;	
+
+    SoundPack {
+     up = "data\menu\mainmenu\sfx\up.wav";
+     down = "data\menu\mainmenu\sfx\down.wav";
+    };    
+
+    MenuPicture {
+     x = 0; y = 0;
+     filename = "data\menu\mainmenu\controls\l_small_light.bmp";
+	 temp = 1;
+    };
+
+   };
+
+   MenuPicture {
+    x = 0; y = 0;
+    filename = "data\menu\mainmenu\screens\scores.bmp";
+	transparent = 0;
+	temp = 1;
+   };
+
+  };
+
+ };
+
+ MenuPicture {
+  x = 0; y = 0;
+  filename = "data\menu\mainmenu\screens\mainmenu.bmp";
+  transparent = 0;
+  temp = 1;
+ };
+
+};

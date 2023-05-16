@@ -1,0 +1,614 @@
+
+MenuWrapper {
+
+ x = 0; y = 0;
+ name = "MainMenu";
+
+ MenuEditControl {
+  x = 400; y = 0;
+  tx = 400; ty = 0;
+  tw = 209; th = 64;
+  cx = 15; cy = 10;
+
+  MenuPicture {
+   x = 0; y = 0;
+   filename = "data\mainmenu\edit.bmp";
+  };
+  font = "data\fonts\chicago22.fnt";
+  Caption = "Unnamed";
+
+  // CFStart = "data\cars\vette\a";
+  // CFEnd = ".bmp";
+  // CFCount = 72;
+  
+ };
+
+ MenuButton {
+
+  SoundPack {
+   up = "data\mainmenu\sfx\start.wav";
+   down = "data\mainmenu\sfx\start.wav";
+  };
+
+  name = "START";
+
+  x  = 8;    y  = 9; 
+  tx = 8;    ty = 9;
+  tw = 209;  th = 64;
+
+  MenuPicture {
+   x = 0; y = 0;
+   filename = "data\mainmenu\start.bmp";
+  };
+ };
+
+ MenuButton {
+
+  SoundPack {
+   up = "data\mainmenu\sfx\up.wav";
+   down = "data\mainmenu\sfx\down.wav";
+  };
+
+  x  = 8; y  = 89; 
+  tx = 8;  ty = 89;
+  tw = 209; th = 64;
+
+  MenuPicture {
+   x = 0; y = 0;
+   filename = "data\mainmenu\options.bmp";
+  };
+
+  MenuWrapper {
+
+   x = 260; y = -9;
+
+   MenuButton {
+
+    SoundPack {
+     up = "data\mainmenu\sfx\up.wav";
+     down = "data\mainmenu\sfx\down.wav";
+    };
+
+    x  = 11; y  = 9; 
+    tx = 280; ty = 89;
+    tw = 238; th = 62;
+
+    MenuPicture {
+     x = 0; y = 0;
+     filename = "data\mainmenu\options\game.bmp";
+    };
+
+    MenuWrapper {
+     x = -11; y = -89;
+
+     MenuSwitch {
+
+      name = "GAMETYPE";
+
+      x  = 0;   y  = 10;
+      tx = 279; ty = 9;
+      tw = 506; th = 62;
+
+      MenuPicture {
+       x = 300; y = 0;
+       filename = "data\mainmenu\options\game\client.bmp";
+      };
+      MenuPicture {
+       x = 20; y = 0;
+       filename = "data\mainmenu\options\game\server.bmp";
+      };
+
+     };
+
+     MenuButton {
+
+      SoundPack {
+       up = "data\mainmenu\sfx\up.wav";
+       down = "data\mainmenu\sfx\up.wav";
+      };
+
+      x  = 0; y  = 0; 
+      tx = 279; ty = 9;
+      tw = 506; th = 62;
+      pause = 0;
+
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\game\hilighted.bmp";
+      };
+     };
+
+     MenuPicture {
+      x = 0; y = 0;
+      filename = "data\mainmenu\options\game\mainframe.bmp";
+     };
+    };
+   };
+
+   MenuButton {
+
+    SoundPack {
+     up = "data\mainmenu\sfx\up.wav";
+     down = "data\mainmenu\sfx\down.wav";
+    };
+
+    x  = 11; y  = 89; 
+    tx = 280; ty = 169;
+    tw = 238; th = 62;
+
+    MenuPicture {
+     x = 0; y = 0;
+     filename = "data\mainmenu\options\video.bmp";
+    };
+    MenuWrapper {
+     x = 260; y = -89;
+     MenuSwitch {
+      name = "COLORDEPTH";
+      x  = 140; y  = 40;
+      tx = 675; ty = 117;
+      tw = 80; th = 80;
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\video\16bit.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\video\24bit.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\video\32bit.bmp";
+      };
+     };
+     MenuSwitch {
+      name = "FULLSCREEN";
+      x  = 66; y  = 35;
+      tx = 605; ty = 115;
+      tw = 48; th = 90;
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\video\windowed.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\video\fullscreen.bmp";
+      };
+     };
+     MenuPicture {
+      x  = 0; y  = 0; 
+      filename = "data\mainmenu\options\video\mainframe.bmp";
+     };
+    };
+   };
+
+   MenuButton {
+
+    SoundPack {
+     up = "data\mainmenu\sfx\up.wav";
+     down = "data\mainmenu\sfx\down.wav";
+    };
+
+    x  = 11; y  = 169; 
+    tx = 280; ty = 249;
+    tw = 238; th = 62;
+
+    MenuPicture {
+     x = 0; y = 0;
+     filename = "data\mainmenu\options\audio.bmp";
+    };
+    MenuWrapper {
+     x = 260; y = -9;
+     MenuSlider {
+      name = "AUDIOVOLUME";
+      x  = 0; y  = 0; 
+      tx = 689; ty = 271;
+      tw = 60; th = 19;
+      filestart = "data\mainmenu\options\volume\vol";
+      fileend = ".bmp";
+      filecount = 30;
+     };
+    };
+   };
+
+   MenuButton {
+
+    SoundPack {
+     up = "data\mainmenu\sfx\up.wav";
+     down = "data\mainmenu\sfx\down.wav";
+    };
+
+    x  = 11; y  = 249; 
+    tx = 280; ty = 329;
+    tw = 238; th = 62;
+
+    MenuPicture {
+     x = 0; y = 0;
+     filename = "data\mainmenu\options\controls.bmp";
+    };
+    MenuWrapper {
+     x = -260; y = 0;
+
+// ------------ player 1
+
+     MenuSwitch {
+
+      name = "PLAYER1TYPE";
+
+      x  = 120; y  = 30;
+      tx = 140; ty = 360;
+      tw = 80;  th = 70;
+
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\none.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\human.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\ai.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\network.bmp";
+      };
+
+     };
+
+
+     MenuSwitch {
+
+      name = "PLAYER1CTL";
+
+      x  = 30; y  = 50;
+      tx = 50; ty = 380;
+      tw = 70; th = 50;
+
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\kleft.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\kright.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\mouse.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\joystick.bmp";
+      };
+
+     };
+
+     MenuButton {
+      SoundPack {
+       up = "data\mainmenu\sfx\up.wav";
+       down = "data\mainmenu\sfx\up.wav";
+      };
+      x  = 120; y  = 30;
+      tx = 140; ty = 360;
+      tw = 80;  th = 70;
+      pause = 0;
+     };
+
+     MenuButton {
+      SoundPack {
+       up = "data\mainmenu\sfx\down.wav";
+       down = "data\mainmenu\sfx\down.wav";
+      };
+      x  = 30; y  = 50;
+      tx = 50; ty = 380;
+      tw = 70; th = 50;
+      pause = 0;
+     };
+
+// ------------ player 2
+
+     MenuSwitch {
+
+      name = "PLAYER2TYPE";
+
+      x  = 650; y  = 30;
+      tx = 670; ty = 360;
+      tw = 80;  th = 70;
+
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\none.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\human.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\ai.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\network.bmp";
+      };
+
+     };
+
+
+     MenuSwitch {
+
+      name = "PLAYER2CTL";
+
+      x  = 560; y  = 50;
+      tx = 580; ty = 380;
+      tw = 70;  th = 50;
+
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\kleft.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\kright.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\mouse.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\joystick.bmp";
+      };
+
+     };
+
+     MenuButton {
+      SoundPack {
+       up = "data\mainmenu\sfx\up.wav";
+       down = "data\mainmenu\sfx\up.wav";
+      };
+      x  = 650; y  = 30;
+      tx = 670; ty = 360;
+      tw = 80;  th = 70;
+      pause = 0;
+     };
+
+     MenuButton {
+      SoundPack {
+       up = "data\mainmenu\sfx\down.wav";
+       down = "data\mainmenu\sfx\down.wav";
+      };
+      x  = 560; y  = 50;
+      tx = 580; ty = 380;
+      tw = 70;  th = 50;
+      pause = 0;
+     };
+
+// ------------ player 3
+
+     MenuSwitch {
+
+      name = "PLAYER3TYPE";
+
+      x  = 120; y  = 140;
+      tx = 140; ty = 470;
+      tw = 80;  th = 70;
+
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\none.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\human.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\ai.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\network.bmp";
+      };
+
+     };
+
+
+     MenuSwitch {
+
+      name = "PLAYER3CTL";
+
+      x  = 30; y  = 160;
+      tx = 50; ty = 490;
+      tw = 70; th = 50;
+
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\kleft.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\kright.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\mouse.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\joystick.bmp";
+      };
+
+     };
+
+     MenuButton {
+      SoundPack {
+       up = "data\mainmenu\sfx\up.wav";
+       down = "data\mainmenu\sfx\up.wav";
+      };
+      x  = 120; y  = 140;
+      tx = 140; ty = 470;
+      tw = 80;  th = 70;
+      pause = 0;
+     };
+
+     MenuButton {
+      SoundPack {
+       up = "data\mainmenu\sfx\down.wav";
+       down = "data\mainmenu\sfx\down.wav";
+      };
+      x  = 30; y  = 160;
+      tx = 50; ty = 490;
+      tw = 70; th = 50;
+      pause = 0;
+     };
+
+// ------------ player 4
+
+     MenuSwitch {
+
+      name = "PLAYER4TYPE";
+
+      x  = 650; y  = 140;
+      tx = 670; ty = 470;
+      tw = 80;  th = 70;
+
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\none.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\human.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\ai.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\network.bmp";
+      };
+
+     };
+
+
+     MenuSwitch {
+
+      name = "PLAYER4CTL";
+
+      x  = 560; y  = 160;
+      tx = 580; ty = 490;
+      tw = 70;  th = 50;
+
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\kleft.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\kright.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\mouse.bmp";
+      };
+      MenuPicture {
+       x = 0; y = 0;
+       filename = "data\mainmenu\options\controls\joystick.bmp";
+      };
+
+     };
+
+
+     MenuButton {
+      SoundPack {
+       up = "data\mainmenu\sfx\up.wav";
+       down = "data\mainmenu\sfx\up.wav";
+      };
+      x  = 650; y  = 140;
+      tx = 670; ty = 470;
+      tw = 80;  th = 70;
+      pause = 0;
+     };
+
+     MenuButton {
+      SoundPack {
+       up = "data\mainmenu\sfx\down.wav";
+       down = "data\mainmenu\sfx\down.wav";
+      };
+      x  = 560; y  = 160;
+      tx = 580; ty = 490;
+      tw = 70;  th = 50;
+      pause = 0;
+     };
+
+//------------------
+
+     MenuMsgWindow {
+      name = "MESSAGEWINDOW";
+      x  = 230; y  = 132; h = 3;
+      font = "data\fonts\chicago22.fnt";
+     };
+
+     MenuPicture {
+      x  = 0; y  = 0; 
+      filename = "data\mainmenu\options\controls\mainframe.bmp";
+     };
+    };
+   };
+
+   MenuPicture {
+    x = 0; y = 0;
+    filename = "data\mainmenu\options\mainframe.bmp";
+   };
+
+  };
+ };
+
+ MenuButton {
+
+  SoundPack {
+   up = "data\mainmenu\sfx\up.wav";
+   down = "data\mainmenu\sfx\up.wav";
+  };
+
+  name = "DEACTIVATEMENU";
+
+  x  = 8;    y  = 169; 
+  tx = 8;    ty = 169;
+  tw = 209;  th = 64;
+
+  MenuPicture {
+   x = 0; y = 0;
+   filename = "data\mainmenu\back.bmp";
+  };
+ };
+
+ MenuButton {
+
+  SoundPack {
+   up = "data\mainmenu\sfx\up.wav";
+   down = "data\mainmenu\sfx\up.wav";
+  };
+
+  name = "EXIT";
+
+  x  = 8;    y  = 249; 
+  tx = 8;    ty = 249;
+  tw = 209;  th = 64;
+
+  MenuPicture {
+   x = 0; y = 0;
+   filename = "data\mainmenu\exit.bmp";
+  };
+ };
+
+ MenuPicture {
+  x = 0; y = 0;
+  filename = "data\mainmenu\mainframe.bmp";
+ };
+
+};

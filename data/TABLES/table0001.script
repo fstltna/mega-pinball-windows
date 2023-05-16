@@ -1,0 +1,3336 @@
+ScreenRect{
+ left = 0;
+ right = 600;
+ top = 0;
+ bottom = 600;
+};;
+TableSettings{
+ ball_count = 3;
+};;
+CollisionForm {
+ atX = 0.3913;
+ atY = 0.8183;
+ k_bounce = 0.5000;
+ k_slide = 0.5000;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.4558;
+  toY = 0.8433;
+ };;
+ Line {
+  toX = 0.4541;
+  toY = 0.8555;
+ };;
+ Line {
+  toX = 0.3970;
+  toY = 0.8447;
+ };;
+ Line {
+  toX = 0.3888;
+  toY = 0.8217;
+ };;
+ Line {
+  toX = 0.4558;
+  toY = 0.8433;
+ };;
+};;
+CollisionForm {
+ atX = 0.5638;
+ atY = 0.8216;
+ k_bounce = 0.5000;
+ k_slide = 0.5000;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.5038;
+  toY = 0.8533;
+ };;
+ Line {
+  toX = 0.5037;
+  toY = 0.8616;
+ };;
+ Line {
+  toX = 0.5624;
+  toY = 0.8500;
+ };;
+ Line {
+  toX = 0.5650;
+  toY = 0.8267;
+ };;
+ Line {
+  toX = 0.5038;
+  toY = 0.8533;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5650;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.7962;
+  toY = 0.7733;
+ };;
+ Line {
+  toX = 0.7638;
+  toY = 0.7966;
+ };;
+ Line {
+  toX = 0.7589;
+  toY = 0.7950;
+ };;
+ Line {
+  toX = 0.7338;
+  toY = 0.7767;
+ };;
+};;
+Dummy {
+ ;;
+};;
+TravelingString {
+ name = "nextball";
+ message = "Game started";
+ font = "msgfnt";
+ center = 0;
+ swiched = 1;
+ active = 0;
+ type = 1;
+ tspeedX = 0.1000;
+ tspeedY = 0.1000;
+ atX = -0.2267;
+ atY = 0.0217;
+ filestart = "data\mobile\b";
+ fileend = ".bmp";
+ filecount = 3;
+ frametime = 0.1000;
+};;
+TravelingString {
+ name = "gameover";
+ message = "GAME OVER! Press ESC to exit or ENTER to restart the game.";
+ font = "greate";
+ center = 0;
+ swiched = 0;
+ active = 0;
+ type = 2;
+ tspeedX = 0.1000;
+ tspeedY = 0.1000;
+ atX = 1.0000;
+ atY = 0.0000;
+ filestart = "data\mobile\a";
+ fileend = ".bmp";
+ filecount = 3;
+ frametime = 0.1000;
+};;
+TravelingString {
+ name = "welcome";
+ message = "To exit Pinball you can press ESC 256 times.";
+ font = "msgfnt";
+ center = 0;
+ swiched = 1;
+ active = 0;
+ type = 2;
+ tspeedX = 0.1000;
+ tspeedY = 0.1000;
+ atX = 1.0000;
+ atY = 0.9616;
+ filestart = "data\mobile\a";
+ fileend = ".bmp";
+ filecount = 3;
+ frametime = 0.1000;
+ SimpleMessage {
+  string = "Monsters Rapsody  ver 1.0";
+ };;
+ SimpleMessage {
+  string = "May your ball be quick.";
+ };;
+ SimpleMessage {
+  string = "Play accurately or we can give you square ball.";
+ };;
+ SimpleMessage {
+  string = "Even your grandmother likes MegaPinball!";
+ };;
+ SimpleMessage {
+  string = "Move your mouse, but don't forget to play The Game.";
+ };;
+ SimpleMessage {
+  string = "Now it is safe to turn off your monitor.";
+ };;
+ SimpleMessage {
+  string = "To exit Pinball you can press ESC 256 times.";
+ };;
+ SimpleMessage {
+  string = "If you don't see the Ball on the table, you must launch next.";
+ };;
+ SimpleMessage {
+  string = "If you catch the Ball with your hand, there will be 10$ in your CD-ROM.";
+ };;
+ SimpleMessage {
+  string = "Wash your hands before playing this game.";
+ };;
+};;
+Dummy {
+ ;;
+};;
+StaticPicture {
+ filename = "data\tables\table0001\frame2.bmp";
+ atX = 1.0000;
+ atY = 0.0000;
+ noTilt = 1;
+};;
+Dummy {
+ ;;
+};;
+Handle {
+ atX = 0.2775;
+ atY = 0.7100;
+ filestart = "data\tables\table0001\lleft\lap";
+ fileend = ".bmp";
+ filecount = 17;
+ fspeed = 25.0000;
+ bspeed = 10.0000;
+ maxangle = -0.6500;
+ length = 0.0620;
+ control = 2;
+ form = 0;
+};;
+Handle {
+ atX = 0.4937;
+ atY = 0.7150;
+ filestart = "data\tables\table0001\lright\lap";
+ fileend = ".bmp";
+ filecount = 17;
+ fspeed = 22.0000;
+ bspeed = 15.0000;
+ maxangle = -0.6500;
+ length = 0.0620;
+ control = 1;
+ form = 1;
+};;
+Spring {
+ atX = 0.7512;
+ atY = 0.7917;
+ filestart = "data\tables\table0001\spring\prj";
+ fileend = ".bmp";
+ filecount = 17;
+ fspeed = 1.0000;
+ bspeed = 10.0000;
+ maxangle = -0.0350;
+ kmax = 0.9000;
+ control = 3;
+ form = 2;
+};;
+Dummy {
+ ;;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.4900;
+ k_slide = 0.3900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.4550;
+  toY = 0.9900;
+ };;
+ Line {
+  toX = 0.4425;
+  toY = 0.9300;
+ };;
+ Line {
+  toX = 0.3925;
+  toY = 0.8833;
+ };;
+ Line {
+  toX = 0.3638;
+  toY = 0.8783;
+ };;
+ Line {
+  toX = 0.3300;
+  toY = 0.8683;
+ };;
+ Line {
+  toX = 0.2938;
+  toY = 0.8517;
+ };;
+ Line {
+  toX = 0.2463;
+  toY = 0.8150;
+ };;
+ Line {
+  toX = 0.2426;
+  toY = 0.7634;
+ };;
+ Line {
+  toX = 0.2612;
+  toY = 0.6100;
+ };;
+ Line {
+  toX = 0.2688;
+  toY = 0.5666;
+ };;
+ Line {
+  toX = 0.2938;
+  toY = 0.5850;
+ };;
+ Line {
+  toX = 0.2988;
+  toY = 0.5817;
+ };;
+ Line {
+  toX = 0.3238;
+  toY = 0.6000;
+ };;
+};;
+CollisionForm {
+ atX = 0.4975;
+ atY = 0.5500;
+ k_bounce = 0.4900;
+ k_slide = 0.3900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.6737;
+  toY = 0.5266;
+ };;
+ Line {
+  toX = 0.6675;
+  toY = 0.5366;
+ };;
+ Line {
+  toX = 0.6663;
+  toY = 0.5567;
+ };;
+ Line {
+  toX = 0.6838;
+  toY = 0.5900;
+ };;
+ Line {
+  toX = 0.6975;
+  toY = 0.6200;
+ };;
+ Line {
+  toX = 0.7125;
+  toY = 0.7200;
+ };;
+ Line {
+  toX = 0.7075;
+  toY = 0.7750;
+ };;
+ Line {
+  toX = 0.6912;
+  toY = 0.8267;
+ };;
+ Line {
+  toX = 0.6638;
+  toY = 0.8533;
+ };;
+ Line {
+  toX = 0.6250;
+  toY = 0.8717;
+ };;
+ Line {
+  toX = 0.5725;
+  toY = 0.8800;
+ };;
+ Line {
+  toX = 0.5163;
+  toY = 0.9300;
+ };;
+ Line {
+  toX = 0.5125;
+  toY = 0.9833;
+ };;
+};;
+CollisionForm {
+ atX = 0.7625;
+ atY = 0.6833;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.7412;
+  toY = 0.2900;
+ };;
+ Line {
+  toX = 0.6975;
+  toY = 0.3750;
+ };;
+ Line {
+  toX = 0.6938;
+  toY = 0.3916;
+ };;
+ Line {
+  toX = 0.7063;
+  toY = 0.4717;
+ };;
+ Line {
+  toX = 0.7400;
+  toY = 0.5250;
+ };;
+ Line {
+  toX = 0.7625;
+  toY = 0.5817;
+ };;
+ Line {
+  toX = 0.7937;
+  toY = 0.8617;
+ };;
+ Line {
+  toX = 0.7512;
+  toY = 0.8617;
+ };;
+ Line {
+  toX = 0.7249;
+  toY = 0.6017;
+ };;
+ Line {
+  toX = 0.7175;
+  toY = 0.5834;
+ };;
+ Line {
+  toX = 0.7037;
+  toY = 0.5583;
+ };;
+ Line {
+  toX = 0.6975;
+  toY = 0.5467;
+ };;
+ Line {
+  toX = 0.6900;
+  toY = 0.5383;
+ };;
+ Line {
+  toX = 0.6738;
+  toY = 0.5250;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.6638;
+  toY = 0.3550;
+ };;
+ Line {
+  toX = 0.6700;
+  toY = 0.3366;
+ };;
+ Line {
+  toX = 0.7325;
+  toY = 0.2600;
+ };;
+ Line {
+  toX = 0.7238;
+  toY = 0.2483;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.7125;
+  toY = 0.3467;
+ };;
+ Line {
+  toX = 0.7400;
+  toY = 0.2916;
+ };;
+ Line {
+  toX = 0.7212;
+  toY = 0.2767;
+ };;
+ Line {
+  toX = 0.6925;
+  toY = 0.3116;
+ };;
+ Line {
+  toX = 0.6800;
+  toY = 0.3283;
+ };;
+};;
+CollisionForm {
+ atX = 0.5625;
+ atY = 0.3167;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.6887;
+  toY = 0.2200;
+ };;
+ Line {
+  toX = 0.6538;
+  toY = 0.2250;
+ };;
+ Line {
+  toX = 0.6625;
+  toY = 0.1734;
+ };;
+ Line {
+  toX = 0.6375;
+  toY = 0.1700;
+ };;
+ Line {
+  toX = 0.6200;
+  toY = 0.1766;
+ };;
+ Line {
+  toX = 0.6062;
+  toY = 0.1817;
+ };;
+ Line {
+  toX = 0.5975;
+  toY = 0.2333;
+ };;
+ Line {
+  toX = 0.5687;
+  toY = 0.2467;
+ };;
+ Line {
+  toX = 0.5325;
+  toY = 0.2550;
+ };;
+ Line {
+  toX = 0.5250;
+  toY = 0.3183;
+ };;
+ Line {
+  toX = 0.5162;
+  toY = 0.3333;
+ };;
+ Line {
+  toX = 0.5100;
+  toY = 0.3333;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.4800;
+  toY = 0.3733;
+ };;
+ Line {
+  toX = 0.4800;
+  toY = 0.0950;
+ };;
+ Line {
+  toX = 0.4925;
+  toY = 0.0900;
+ };;
+ Line {
+  toX = 0.5050;
+  toY = 0.0883;
+ };;
+ Line {
+  toX = 0.5088;
+  toY = 0.1000;
+ };;
+ Line {
+  toX = 0.5088;
+  toY = 0.3767;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.2963;
+  toY = 0.2000;
+ };;
+ Line {
+  toX = 0.3250;
+  toY = 0.2000;
+ };;
+ Line {
+  toX = 0.3363;
+  toY = 0.2017;
+ };;
+ Line {
+  toX = 0.3525;
+  toY = 0.2133;
+ };;
+ Line {
+  toX = 0.3625;
+  toY = 0.2267;
+ };;
+ Line {
+  toX = 0.3838;
+  toY = 0.2417;
+ };;
+ Line {
+  toX = 0.4125;
+  toY = 0.2500;
+ };;
+ Line {
+  toX = 0.4550;
+  toY = 0.2550;
+ };;
+ Line {
+  toX = 0.4625;
+  toY = 0.2817;
+ };;
+ Line {
+  toX = 0.4650;
+  toY = 0.3150;
+ };;
+ Line {
+  toX = 0.4725;
+  toY = 0.3333;
+ };;
+ Line {
+  toX = 0.4788;
+  toY = 0.3333;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.3263;
+  toY = 0.4500;
+ };;
+ Line {
+  toX = 0.3388;
+  toY = 0.4267;
+ };;
+ Line {
+  toX = 0.3438;
+  toY = 0.4083;
+ };;
+ Line {
+  toX = 0.3413;
+  toY = 0.3850;
+ };;
+ Line {
+  toX = 0.3363;
+  toY = 0.3800;
+ };;
+ Line {
+  toX = 0.3188;
+  toY = 0.3667;
+ };;
+ Line {
+  toX = 0.2713;
+  toY = 0.3400;
+ };;
+ Line {
+  toX = 0.2513;
+  toY = 0.3234;
+ };;
+ Line {
+  toX = 0.2388;
+  toY = 0.3000;
+ };;
+ Line {
+  toX = 0.2375;
+  toY = 0.2617;
+ };;
+ Line {
+  toX = 0.2425;
+  toY = 0.2433;
+ };;
+ Line {
+  toX = 0.2475;
+  toY = 0.2283;
+ };;
+ Line {
+  toX = 0.2575;
+  toY = 0.2183;
+ };;
+ Line {
+  toX = 0.2713;
+  toY = 0.2233;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.3038;
+  toY = 0.2117;
+ };;
+ Line {
+  toX = 0.2513;
+  toY = 0.1600;
+ };;
+ Line {
+  toX = 0.2301;
+  toY = 0.1784;
+ };;
+ Line {
+  toX = 0.2800;
+  toY = 0.2300;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.2638;
+  toY = 0.4750;
+ };;
+ Line {
+  toX = 0.2888;
+  toY = 0.5016;
+ };;
+ Line {
+  toX = 0.2963;
+  toY = 0.5133;
+ };;
+ Line {
+  toX = 0.2988;
+  toY = 0.5216;
+ };;
+ Line {
+  toX = 0.3363;
+  toY = 0.5467;
+ };;
+ Line {
+  toX = 0.3313;
+  toY = 0.5467;
+ };;
+ Line {
+  toX = 0.3126;
+  toY = 0.5317;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.3275;
+  toY = 0.5400;
+ };;
+ Line {
+  toX = 0.2476;
+  toY = 0.4866;
+ };;
+ Line {
+  toX = 0.2163;
+  toY = 0.5200;
+ };;
+ Line {
+  toX = 0.2937;
+  toY = 0.5734;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.3950;
+  toY = 0.7817;
+ };;
+ Line {
+  toX = 0.3863;
+  toY = 0.7833;
+ };;
+ Line {
+  toX = 0.3463;
+  toY = 0.7633;
+ };;
+ Line {
+  toX = 0.3413;
+  toY = 0.7567;
+ };;
+ Line {
+  toX = 0.3275;
+  toY = 0.7000;
+ };;
+ Line {
+  toX = 0.3313;
+  toY = 0.6917;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.6300;
+  toY = 0.6917;
+ };;
+ Line {
+  toX = 0.6350;
+  toY = 0.6967;
+ };;
+ Line {
+  toX = 0.6237;
+  toY = 0.7533;
+ };;
+ Line {
+  toX = 0.6187;
+  toY = 0.7633;
+ };;
+ Line {
+  toX = 0.5700;
+  toY = 0.7850;
+ };;
+ Line {
+  toX = 0.5675;
+  toY = 0.7817;
+ };;
+ Line {
+  toX = 0.5688;
+  toY = 0.7683;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.6800;
+  toY = 0.7183;
+ };;
+ Line {
+  toX = 0.6737;
+  toY = 0.7133;
+ };;
+ Line {
+  toX = 0.6637;
+  toY = 0.7217;
+ };;
+ Line {
+  toX = 0.6462;
+  toY = 0.7767;
+ };;
+ Line {
+  toX = 0.6275;
+  toY = 0.7933;
+ };;
+ Line {
+  toX = 0.5600;
+  toY = 0.8217;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.6738;
+  toY = 0.7133;
+ };;
+ Line {
+  toX = 0.6812;
+  toY = 0.7183;
+ };;
+ Line {
+  toX = 0.6825;
+  toY = 0.7267;
+ };;
+ Line {
+  toX = 0.6625;
+  toY = 0.8050;
+ };;
+ Line {
+  toX = 0.6475;
+  toY = 0.8167;
+ };;
+ Line {
+  toX = 0.5712;
+  toY = 0.8433;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.3963;
+  toY = 0.8183;
+ };;
+ Line {
+  toX = 0.3250;
+  toY = 0.7850;
+ };;
+ Line {
+  toX = 0.3138;
+  toY = 0.7700;
+ };;
+ Line {
+  toX = 0.2963;
+  toY = 0.7117;
+ };;
+ Line {
+  toX = 0.2838;
+  toY = 0.7100;
+ };;
+ Line {
+  toX = 0.2775;
+  toY = 0.7167;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.2775;
+  toY = 0.7117;
+ };;
+ Line {
+  toX = 0.2763;
+  toY = 0.7217;
+ };;
+ Line {
+  toX = 0.2975;
+  toY = 0.8017;
+ };;
+ Line {
+  toX = 0.3088;
+  toY = 0.8117;
+ };;
+ Line {
+  toX = 0.3925;
+  toY = 0.8433;
+ };;
+};;
+Dummy {
+ ;;
+};;
+CollisionForm {
+ atX = 0.2738;
+ atY = 0.8033;
+ k_bounce = 2.0000;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.2801;
+  toY = 0.8150;
+ };;
+ Line {
+  toX = 0.2625;
+  toY = 0.8117;
+ };;
+ Line {
+  toX = 0.2612;
+  toY = 0.8000;
+ };;
+ Line {
+  toX = 0.2750;
+  toY = 0.7867;
+ };;
+ Line {
+  toX = 0.2863;
+  toY = 0.7934;
+ };;
+ Line {
+  toX = 0.2875;
+  toY = 0.8066;
+ };;
+ Line {
+  toX = 0.2788;
+  toY = 0.8150;
+ };;
+};;
+CollisionForm {
+ atX = 0.6812;
+ atY = 0.8033;
+ k_bounce = 2.0000;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.6762;
+  toY = 0.8183;
+ };;
+ Line {
+  toX = 0.6900;
+  toY = 0.8150;
+ };;
+ Line {
+  toX = 0.6925;
+  toY = 0.8000;
+ };;
+ Line {
+  toX = 0.6850;
+  toY = 0.7900;
+ };;
+ Line {
+  toX = 0.6737;
+  toY = 0.7933;
+ };;
+ Line {
+  toX = 0.6688;
+  toY = 0.8050;
+ };;
+ Line {
+  toX = 0.6762;
+  toY = 0.8183;
+ };;
+};;
+StaticPicture {
+ filename = "data\tables\table0001\svr\right.bmp";
+ atX = 0.6650;
+ atY = 0.7850;
+ noTilt = 0;
+};;
+StaticPicture {
+ filename = "data\tables\table0001\svr\left.bmp";
+ atX = 0.2612;
+ atY = 0.7850;
+ noTilt = 0;
+};;
+StaticPicture {
+ filename = "data\tables\table0001\svr\text.bmp";
+ atX = 0.6093;
+ atY = 0.8597;
+ noTilt = 0;
+};;
+Link {
+ from = 39;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 1;
+ ee_invert = 0;
+ ee_time = 15.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 33; };
+ To { current_only = 0; to = 34; };
+ To { current_only = 0; to = 35; };
+ To { current_only = 0; to = 36; };
+ To { current_only = 0; to = 37; };
+};;
+Dummy {
+ ;;
+};;
+TSwitch {
+ atX = 0.5625;
+ atY = 0.7000;
+ filename = "data\tables\table0001\flips\glowright.bmp";
+};;
+TSwitch {
+ atX = 0.3362;
+ atY = 0.6963;
+ filename = "data\tables\table0001\flips\glowleft.bmp";
+};;
+TSwitch {
+ atX = 0.6750;
+ atY = 0.2017;
+ filename = "data\tables\table0001\flips\tf2.bmp";
+};;
+StaticSprite {
+ atX = 0.4175;
+ atY = 0.0117;
+ filestart = "data\tables\table0001\monster\teeth";
+ fileend = ".bmp";
+ filecount = 21;
+ frametime = 0.1000;
+ reverse = 0;
+ likecounter = 0;
+ playalways = 0;
+ playbackalso = 1;
+ loopcount = 1;
+};;
+StaticSprite {
+ atX = 0.6637;
+ atY = 0.2367;
+ filestart = "data\tables\table0001\rsprn\a";
+ fileend = ".bmp";
+ filecount = 7;
+ frametime = 0.1000;
+ reverse = 0;
+ likecounter = 0;
+ playalways = 0;
+ playbackalso = 0;
+ loopcount = 1;
+};;
+StaticSprite {
+ atX = 0.1975;
+ atY = 0.4667;
+ filestart = "data\tables\table0001\lsprn\a";
+ fileend = ".bmp";
+ filecount = 7;
+ frametime = 0.1000;
+ reverse = 0;
+ likecounter = 0;
+ playalways = 0;
+ playbackalso = 0;
+ loopcount = 1;
+};;
+StaticPicture {
+ filename = "data\tables\table0001\btop03.bmp";
+ atX = 0.2313;
+ atY = 0.1350;
+ noTilt = 0;
+};;
+StaticPicture {
+ filename = "data\tables\table0001\btop02.bmp";
+ atX = 0.6775;
+ atY = 0.7367;
+ noTilt = 0;
+};;
+StaticPicture {
+ filename = "data\tables\table0001\btop01.bmp";
+ atX = 0.2088;
+ atY = 0.7333;
+ noTilt = 0;
+};;
+MainBall{
+ name = "G_Ball";
+ atX = 0.7550;
+ atY = 0.6967;
+ startup_position_x = 0.7550;
+ startup_position_y = 0.6967;
+ startup_speed_x = 0.0000;
+ startup_speed_y = 0.0000;
+ radius = 0.0133;
+ opacity = 0.8500;
+ dmap = "data\efball\ball0.bmp";
+ dmplus = "data\efball\ball1.bmp";
+ image = "data\efball\ball2.bmp";
+ shadow = "data\efball\ball3.bmp";
+ shX = 2;
+ shY = 5;
+ refX = 0;
+ refY = 8;
+ temp = 1;
+};;
+MainBall{
+ name = "The Ball !!!!";
+ atX = 0.7625;
+ atY = 0.7811;
+ startup_position_x = 0.7550;
+ startup_position_y = 0.6967;
+ startup_speed_x = 0.0000;
+ startup_speed_y = 0.0000;
+ radius = 0.0133;
+ opacity = 0.8500;
+ dmap = "data\efball\ball0.bmp";
+ dmplus = "data\efball\ball1.bmp";
+ image = "data\efball\ball2.bmp";
+ shadow = "data\efball\ball3.bmp";
+ shX = 2;
+ shY = 5;
+ refX = 0;
+ refY = 8;
+ temp = 0;
+};;
+Dummy {
+ ;;
+};;
+TSwitch {
+ atX = 0.2875;
+ atY = 0.2967;
+ filename = "data\tables\table0001\tcircle\5.bmp";
+};;
+TSwitch {
+ atX = 0.3375;
+ atY = 0.2983;
+ filename = "data\tables\table0001\tcircle\4.bmp";
+};;
+TSwitch {
+ atX = 0.3512;
+ atY = 0.2667;
+ filename = "data\tables\table0001\tcircle\3.bmp";
+};;
+TSwitch {
+ atX = 0.3162;
+ atY = 0.2483;
+ filename = "data\tables\table0001\tcircle\2.bmp";
+};;
+TSwitch {
+ atX = 0.2788;
+ atY = 0.2683;
+ filename = "data\tables\table0001\tcircle\1.bmp";
+};;
+CollisionForm {
+ atX = 0.3050;
+ atY = 0.3150;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.3025;
+  toY = 0.3000;
+ };;
+ Line {
+  toX = 0.3138;
+  toY = 0.3000;
+ };;
+ Line {
+  toX = 0.3225;
+  toY = 0.3033;
+ };;
+ Line {
+  toX = 0.3275;
+  toY = 0.3117;
+ };;
+ Line {
+  toX = 0.3250;
+  toY = 0.3200;
+ };;
+ Line {
+  toX = 0.3175;
+  toY = 0.3267;
+ };;
+ Line {
+  toX = 0.3063;
+  toY = 0.3300;
+ };;
+ Line {
+  toX = 0.2938;
+  toY = 0.3250;
+ };;
+ Line {
+  toX = 0.2875;
+  toY = 0.3183;
+ };;
+ Line {
+  toX = 0.2900;
+  toY = 0.3067;
+ };;
+ Line {
+  toX = 0.3038;
+  toY = 0.3000;
+ };;
+};;
+CollisionForm {
+ atX = 0.3575;
+ atY = 0.3117;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.3363;
+  toY = 0.3167;
+ };;
+ Line {
+  toX = 0.3388;
+  toY = 0.3067;
+ };;
+ Line {
+  toX = 0.3500;
+  toY = 0.3000;
+ };;
+ Line {
+  toX = 0.3650;
+  toY = 0.3000;
+ };;
+ Line {
+  toX = 0.3763;
+  toY = 0.3067;
+ };;
+ Line {
+  toX = 0.3750;
+  toY = 0.3200;
+ };;
+ Line {
+  toX = 0.3600;
+  toY = 0.3283;
+ };;
+ Line {
+  toX = 0.3438;
+  toY = 0.3250;
+ };;
+ Line {
+  toX = 0.3350;
+  toY = 0.3150;
+ };;
+};;
+CollisionForm {
+ atX = 0.3688;
+ atY = 0.2800;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.3625;
+  toY = 0.2667;
+ };;
+ Line {
+  toX = 0.3488;
+  toY = 0.2783;
+ };;
+ Line {
+  toX = 0.3538;
+  toY = 0.2900;
+ };;
+ Line {
+  toX = 0.3713;
+  toY = 0.2950;
+ };;
+ Line {
+  toX = 0.3875;
+  toY = 0.2883;
+ };;
+ Line {
+  toX = 0.3888;
+  toY = 0.2750;
+ };;
+ Line {
+  toX = 0.3800;
+  toY = 0.2667;
+ };;
+ Line {
+  toX = 0.3625;
+  toY = 0.2667;
+ };;
+};;
+CollisionForm {
+ atX = 0.3338;
+ atY = 0.2600;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.3425;
+  toY = 0.2467;
+ };;
+ Line {
+  toX = 0.3500;
+  toY = 0.2517;
+ };;
+ Line {
+  toX = 0.3525;
+  toY = 0.2600;
+ };;
+ Line {
+  toX = 0.3475;
+  toY = 0.2700;
+ };;
+ Line {
+  toX = 0.3375;
+  toY = 0.2750;
+ };;
+ Line {
+  toX = 0.3225;
+  toY = 0.2717;
+ };;
+ Line {
+  toX = 0.3138;
+  toY = 0.2633;
+ };;
+ Line {
+  toX = 0.3175;
+  toY = 0.2533;
+ };;
+ Line {
+  toX = 0.3313;
+  toY = 0.2467;
+ };;
+ Line {
+  toX = 0.3450;
+  toY = 0.2483;
+ };;
+};;
+CollisionForm {
+ atX = 0.2950;
+ atY = 0.2800;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.2775;
+  toY = 0.2750;
+ };;
+ Line {
+  toX = 0.2888;
+  toY = 0.2683;
+ };;
+ Line {
+  toX = 0.3088;
+  toY = 0.2683;
+ };;
+ Line {
+  toX = 0.3175;
+  toY = 0.2783;
+ };;
+ Line {
+  toX = 0.3138;
+  toY = 0.2900;
+ };;
+ Line {
+  toX = 0.3000;
+  toY = 0.2967;
+ };;
+ Line {
+  toX = 0.2850;
+  toY = 0.2933;
+ };;
+ Line {
+  toX = 0.2763;
+  toY = 0.2833;
+ };;
+ Line {
+  toX = 0.2813;
+  toY = 0.2733;
+ };;
+};;
+SoundObj {
+ filename = "data\sfx\1button.wav";
+};;
+Link {
+ from = 57;
+ next = -1;
+ active_element = -1;
+ scores = 5000;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 52; };
+ To { current_only = 0; to = 62; };
+};;
+Link {
+ from = 58;
+ next = -1;
+ active_element = -1;
+ scores = 5000;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 53; };
+ To { current_only = 0; to = 62; };
+};;
+Link {
+ from = 59;
+ next = -1;
+ active_element = -1;
+ scores = 5000;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 54; };
+ To { current_only = 0; to = 62; };
+};;
+Link {
+ from = 60;
+ next = -1;
+ active_element = -1;
+ scores = 5000;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 55; };
+ To { current_only = 0; to = 62; };
+};;
+Link {
+ from = 61;
+ next = -1;
+ active_element = -1;
+ scores = 5000;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 56; };
+ To { current_only = 0; to = 62; };
+};;
+Dummy {
+ ;;
+};;
+TSwitch {
+ atX = 0.6287;
+ atY = 0.7317;
+ filename = "data\tables\table0001\flips\right.bmp";
+};;
+TSwitch {
+ atX = 0.3137;
+ atY = 0.7283;
+ filename = "data\tables\table0001\flips\left.bmp";
+};;
+SoundObj {
+ filename = "data\sfx\3bumper3.WAV";
+};;
+SoundObj {
+ filename = "data\sfx\3bumper3.WAV";
+};;
+CollisionForm {
+ atX = 0.6375;
+ atY = 0.7400;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.6350;
+  toY = 0.7467;
+ };;
+ Line {
+  toX = 0.6487;
+  toY = 0.7450;
+ };;
+ Line {
+  toX = 0.6487;
+  toY = 0.7333;
+ };;
+ Line {
+  toX = 0.6425;
+  toY = 0.7283;
+ };;
+ Line {
+  toX = 0.6313;
+  toY = 0.7317;
+ };;
+ Line {
+  toX = 0.6312;
+  toY = 0.7417;
+ };;
+ Line {
+  toX = 0.6375;
+  toY = 0.7467;
+ };;
+};;
+CollisionForm {
+ atX = 0.3250;
+ atY = 0.7333;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.3138;
+  toY = 0.7400;
+ };;
+ Line {
+  toX = 0.3113;
+  toY = 0.7300;
+ };;
+ Line {
+  toX = 0.3175;
+  toY = 0.7233;
+ };;
+ Line {
+  toX = 0.3313;
+  toY = 0.7250;
+ };;
+ Line {
+  toX = 0.3338;
+  toY = 0.7367;
+ };;
+ Line {
+  toX = 0.3263;
+  toY = 0.7400;
+ };;
+ Line {
+  toX = 0.3138;
+  toY = 0.7400;
+ };;
+};;
+Link {
+ from = 73;
+ next = -1;
+ active_element = -1;
+ scores = 15;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.500;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 69; };
+ To { current_only = 0; to = 71; };
+};;
+Link {
+ from = 74;
+ next = -1;
+ active_element = -1;
+ scores = 15;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.500;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 70; };
+ To { current_only = 0; to = 72; };
+};;
+Dummy {
+ ;;
+};;
+TSwitch {
+ atX = 0.5987;
+ atY = 0.8167;
+ filename = "data\tables\table0001\flips\a_right.bmp";
+};;
+TSwitch {
+ atX = 0.3075;
+ atY = 0.8233;
+ filename = "data\tables\table0001\flips\a_left.bmp";
+};;
+TSwitch {
+ atX = 0.4238;
+ atY = 0.8750;
+ filename = "data\tables\table0001\flips\exit.bmp";
+};;
+CollisionForm {
+ atX = 0.6300;
+ atY = 0.8500;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.5937;
+  toY = 0.8800;
+ };;
+ Line {
+  toX = 0.6275;
+  toY = 0.8183;
+ };;
+ Line {
+  toX = 0.6687;
+  toY = 0.8600;
+ };;
+};;
+CollisionForm {
+ atX = 0.3375;
+ atY = 0.8500;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.3000;
+  toY = 0.8667;
+ };;
+ Line {
+  toX = 0.3375;
+  toY = 0.8250;
+ };;
+ Line {
+  toX = 0.3688;
+  toY = 0.8817;
+ };;
+};;
+CollisionForm {
+ atX = 0.4825;
+ atY = 0.8900;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.4188;
+  toY = 0.9117;
+ };;
+ Line {
+  toX = 0.4450;
+  toY = 0.8850;
+ };;
+ Line {
+  toX = 0.5238;
+  toY = 0.8850;
+ };;
+ Line {
+  toX = 0.5450;
+  toY = 0.9117;
+ };;
+};;
+SoundObj {
+ filename = "data\sfx\2stuck.wav";
+};;
+Link {
+ from = 81;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 1.000;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 78; };
+ To { current_only = 0; to = 84; };
+};;
+Link {
+ from = 82;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 1.000;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 79; };
+ To { current_only = 0; to = 84; };
+};;
+Link {
+ from = 83;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 1;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 2.000;
+ menu_name = "balllose";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 80; };
+ To { current_only = 0; to = 84; };
+};;
+Dummy {
+ ;;
+};;
+SoundObj {
+ filename = "data\sfx\1xtrabol.wav";
+};;
+TSwitch {
+ atX = 0.4112;
+ atY = 0.5550;
+ filename = "data\tables\table0001\flips\eyes.bmp";
+};;
+CollisionForm {
+ atX = 0.4975;
+ atY = 0.6333;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.4638;
+  toY = 0.5550;
+ };;
+ Line {
+  toX = 0.5125;
+  toY = 0.5550;
+ };;
+ Line {
+  toX = 0.5625;
+  toY = 0.6133;
+ };;
+ Line {
+  toX = 0.5712;
+  toY = 0.6333;
+ };;
+ Line {
+  toX = 0.5612;
+  toY = 0.6550;
+ };;
+ Line {
+  toX = 0.5400;
+  toY = 0.6667;
+ };;
+ Line {
+  toX = 0.4538;
+  toY = 0.6700;
+ };;
+ Line {
+  toX = 0.4350;
+  toY = 0.6600;
+ };;
+ Line {
+  toX = 0.4213;
+  toY = 0.6450;
+ };;
+ Line {
+  toX = 0.4225;
+  toY = 0.6283;
+ };;
+ Line {
+  toX = 0.4350;
+  toY = 0.6000;
+ };;
+ Line {
+  toX = 0.4638;
+  toY = 0.5533;
+ };;
+};;
+Link {
+ from = 91;
+ next = -1;
+ active_element = -1;
+ scores = 5;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 10.000;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 90; };
+ To { current_only = 0; to = 89; };
+};;
+Dummy {
+ ;;
+};;
+SoundObj {
+ filename = "data\sfx\3bumper1.wav";
+};;
+SoundObj {
+ filename = "data\sfx\3bumper1.wav";
+};;
+SoundObj {
+ filename = "data\sfx\3bumper1.wav";
+};;
+TSwitch {
+ atX = 0.7212;
+ atY = 0.5650;
+ filename = "data\tables\table0001\flips\in_blue.bmp";
+};;
+TSwitch {
+ atX = 0.7062;
+ atY = 0.5250;
+ filename = "data\tables\table0001\flips\in_green.bmp";
+};;
+TSwitch {
+ atX = 0.6724;
+ atY = 0.4917;
+ filename = "data\tables\table0001\flips\in_yellow.bmp";
+};;
+CollisionForm {
+ atX = 0.7412;
+ atY = 0.5783;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.7600;
+  toY = 0.5833;
+ };;
+ Line {
+  toX = 0.7562;
+  toY = 0.5700;
+ };;
+ Line {
+  toX = 0.7375;
+  toY = 0.5650;
+ };;
+ Line {
+  toX = 0.7250;
+  toY = 0.5733;
+ };;
+ Line {
+  toX = 0.7275;
+  toY = 0.5883;
+ };;
+ Line {
+  toX = 0.7425;
+  toY = 0.5933;
+ };;
+ Line {
+  toX = 0.7600;
+  toY = 0.5850;
+ };;
+};;
+CollisionForm {
+ atX = 0.7225;
+ atY = 0.5367;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.7125;
+  toY = 0.5250;
+ };;
+ Line {
+  toX = 0.7075;
+  toY = 0.5400;
+ };;
+ Line {
+  toX = 0.7175;
+  toY = 0.5483;
+ };;
+ Line {
+  toX = 0.7312;
+  toY = 0.5483;
+ };;
+ Line {
+  toX = 0.7388;
+  toY = 0.5400;
+ };;
+ Line {
+  toX = 0.7387;
+  toY = 0.5300;
+ };;
+ Line {
+  toX = 0.7263;
+  toY = 0.5233;
+ };;
+ Line {
+  toX = 0.7125;
+  toY = 0.5233;
+ };;
+};;
+CollisionForm {
+ atX = 0.6887;
+ atY = 0.5000;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.6775;
+  toY = 0.4950;
+ };;
+ Line {
+  toX = 0.6737;
+  toY = 0.5066;
+ };;
+ Line {
+  toX = 0.6825;
+  toY = 0.5150;
+ };;
+ Line {
+  toX = 0.6975;
+  toY = 0.5150;
+ };;
+ Line {
+  toX = 0.7038;
+  toY = 0.5067;
+ };;
+ Line {
+  toX = 0.7012;
+  toY = 0.4950;
+ };;
+ Line {
+  toX = 0.6925;
+  toY = 0.4900;
+ };;
+ Line {
+  toX = 0.6775;
+  toY = 0.4933;
+ };;
+};;
+Link {
+ from = 100;
+ next = -1;
+ active_element = -1;
+ scores = 5;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 97; };
+ To { current_only = 0; to = 94; };
+};;
+Link {
+ from = 101;
+ next = -1;
+ active_element = -1;
+ scores = 5;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 98; };
+ To { current_only = 0; to = 95; };
+};;
+Link {
+ from = 102;
+ next = -1;
+ active_element = -1;
+ scores = 5;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 99; };
+ To { current_only = 0; to = 96; };
+};;
+Dummy {
+ ;;
+};;
+SoundObj {
+ filename = "data\sfx\2bumper4.wav";
+};;
+TSwitch {
+ atX = 0.7987;
+ atY = 0.5816;
+ filename = "data\tables\table0001\flips\spring2.bmp";
+};;
+Link {
+ from = 12;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 5.000;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 107; };
+};;
+Link {
+ from = 12;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 1;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 9000.000;
+ menu_name = "fly";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+};;
+Link {
+ from = 12;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 108; };
+};;
+Dummy {
+ ;;
+};;
+SoundObj {
+ filename = "data\sfx\1jack2.WAV";
+};;
+StaticSprite {
+ atX = 0.4775;
+ atY = 0.3800;
+ filestart = "data\tables\table0001\toparr\a";
+ fileend = ".bmp";
+ filecount = 5;
+ frametime = 0.1000;
+ reverse = 1;
+ likecounter = 0;
+ playalways = 0;
+ playbackalso = 0;
+ loopcount = 1;
+};;
+Teleporter {
+ atX = 0.2862;
+ atY = 0.2150;
+ speedX = 0.0195;
+ speedY = 0.0187;
+ speedValue = 0.0000;
+ timeToRelease = 4.0000;
+};;
+CollisionForm {
+ atX = 0.4176;
+ atY = 0.2500;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_NONE";
+ Line {
+  toX = 0.4662;
+  toY = 0.2117;
+ };;
+ Line {
+  toX = 0.5287;
+  toY = 0.2117;
+ };;
+};;
+Link {
+ from = 116;
+ next = 143;
+ active_element = 114;
+ scores = 0;
+ big_scores = 450000;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 1;
+ can_resetscores_wbc = 0;
+ change_count = 4;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.500;
+ menu_name = "m005";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 1; to = 38; };
+};;
+Link {
+ from = 116;
+ next = -1;
+ active_element = -1;
+ scores = 50000;
+ big_scores = 0;
+ can_activate_menu = 1;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "thunder";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 43; };
+ To { current_only = 0; to = 115; };
+ To { current_only = 0; to = 113; };
+};;
+Dummy {
+ ;;
+};;
+Link {
+ from = 155;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 1.000;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 121; };
+};;
+Link {
+ from = 126;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 1.000;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 1;
+ ee_invert = 0;
+ ee_time = 10.000;
+ sl_limit = 0;
+ skip_events = 3;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 132; };
+ To { current_only = 0; to = 133; };
+ To { current_only = 0; to = 134; };
+};;
+Dummy {
+ ;;
+};;
+SoundObj {
+ filename = "data\sfx\3ramp.WAV";
+};;
+StaticSprite {
+ atX = 0.5537;
+ atY = 0.3817;
+ filestart = "data\tables\table0001\toparr\bl";
+ fileend = ".bmp";
+ filecount = 4;
+ frametime = 0.1000;
+ reverse = 1;
+ likecounter = 0;
+ playalways = 0;
+ playbackalso = 0;
+ loopcount = 1;
+};;
+Teleporter {
+ atX = 0.2625;
+ atY = 0.5183;
+ speedX = 0.0858;
+ speedY = 0.0653;
+ speedValue = 0.5000;
+ timeToRelease = 3.0000;
+};;
+CollisionForm {
+ atX = 0.6375;
+ atY = 0.2667;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.6825;
+  toY = 0.3183;
+ };;
+ Line {
+  toX = 0.7174;
+  toY = 0.3333;
+ };;
+};;
+Link {
+ from = 126;
+ next = 145;
+ active_element = 124;
+ scores = 0;
+ big_scores = 280000;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 1;
+ can_resetscores_wbc = 0;
+ change_count = 3;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.500;
+ menu_name = "m008";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 1; to = 38; };
+};;
+Link {
+ from = 126;
+ next = 145;
+ active_element = 124;
+ scores = 20000;
+ big_scores = 200000;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 1;
+ can_resetscores_wbc = 0;
+ change_count = 3;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 1;
+ time_to_sleep = 1.000;
+ menu_name = "m001";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 1; to = 38; };
+};;
+Link {
+ from = 126;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 1;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 1;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 1.000;
+ menu_name = "tunnel";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 125; };
+ To { current_only = 0; to = 44; };
+ To { current_only = 0; to = 123; };
+};;
+Dummy {
+ ;;
+};;
+SoundObj {
+ filename = "data\sfx\1stuck.wav";
+};;
+StaticSprite {
+ atX = 0.5212;
+ atY = 0.3150;
+ filestart = "data\tables\table0001\exball\a";
+ fileend = ".bmp";
+ filecount = 2;
+ frametime = 0.1500;
+ reverse = 0;
+ likecounter = 0;
+ playalways = 1;
+ playbackalso = 0;
+ loopcount = 1;
+};;
+StaticSprite {
+ atX = 0.5788;
+ atY = 0.2360;
+ filestart = "data\tables\table0001\toparr\bt";
+ fileend = ".bmp";
+ filecount = 4;
+ frametime = 0.2000;
+ reverse = 1;
+ likecounter = 0;
+ playalways = 1;
+ playbackalso = 0;
+ loopcount = 1;
+};;
+BallGenerator {
+ atX = 0.6512;
+ atY = 0.3250;
+ speedX = -0.1806;
+ speedY = 0.2523;
+ speedValue = 5.0000;
+};;
+CollisionForm {
+ atX = 0.7025;
+ atY = 0.2267;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.7375;
+  toY = 0.2500;
+ };;
+ Line {
+  toX = 0.7125;
+  toY = 0.2500;
+ };;
+ Line {
+  toX = 0.6863;
+  toY = 0.2300;
+ };;
+ Line {
+  toX = 0.6862;
+  toY = 0.2033;
+ };;
+};;
+Link {
+ from = 135;
+ next = -1;
+ active_element = -1;
+ scores = 40;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 42; };
+ To { current_only = 0; to = 134; };
+ To { current_only = 0; to = 131; };
+};;
+Dummy {
+ ;;
+};;
+SoundObj {
+ filename = "data\sfx\5switch2.wav";
+};;
+StaticSprite {
+ atX = 0.2438;
+ atY = 0.3533;
+ filestart = "data\tables\table0001\swr\a";
+ fileend = ".bmp";
+ filecount = 4;
+ frametime = 0.0000;
+ reverse = 0;
+ likecounter = 1;
+ playalways = 0;
+ playbackalso = 0;
+ loopcount = 1;
+};;
+CollisionForm {
+ atX = 0.3125;
+ atY = 0.3833;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.2800;
+  toY = 0.4800;
+ };;
+ Line {
+  toX = 0.3126;
+  toY = 0.4500;
+ };;
+ Line {
+  toX = 0.3238;
+  toY = 0.4483;
+ };;
+};;
+Link {
+ from = 140;
+ next = -1;
+ active_element = -1;
+ scores = 20000;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.500;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 139; };
+ To { current_only = 0; to = 138; };
+};;
+StaticSprite {
+ atX = 0.3020;
+ atY = 0.4690;
+ filestart = "data\tables\table0001\al2\a";
+ fileend = ".bmp";
+ filecount = 2;
+ frametime = 0.1500;
+ reverse = 0;
+ likecounter = 0;
+ playalways = 0;
+ playbackalso = 0;
+ loopcount = 1;
+};;
+Link {
+ from = 140;
+ next = 157;
+ active_element = 142;
+ scores = 0;
+ big_scores = 980000;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 1;
+ can_resetscores_wbc = 0;
+ change_count = 1;
+ change_step = 4;
+ change_offset = 10;
+ initially_current = 0;
+ time_to_sleep = 0.500;
+ menu_name = "m006";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 1; to = 38; };
+};;
+Link {
+ from = 140;
+ next = 117;
+ active_element = 142;
+ scores = 0;
+ big_scores = 280000;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 1;
+ can_resetscores_wbc = 0;
+ change_count = 1;
+ change_step = 4;
+ change_offset = 11;
+ initially_current = 0;
+ time_to_sleep = 0.500;
+ menu_name = "m004";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 1; to = 38; };
+};;
+Link {
+ from = 140;
+ next = 151;
+ active_element = 142;
+ scores = 0;
+ big_scores = 280000;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 1;
+ can_resetscores_wbc = 0;
+ change_count = 1;
+ change_step = 4;
+ change_offset = 12;
+ initially_current = 0;
+ time_to_sleep = 0.500;
+ menu_name = "m002";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 1; to = 38; };
+};;
+Dummy {
+ ;;
+};;
+SoundObj {
+ filename = "data\sfx\1bumper2.wav";
+};;
+StaticSprite {
+ atX = 0.6170;
+ atY = 0.2240;
+ filestart = "data\tables\table0001\tf1\a";
+ fileend = ".bmp";
+ filecount = 3;
+ frametime = 0.2000;
+ reverse = 1;
+ likecounter = 0;
+ playalways = 0;
+ playbackalso = 0;
+ loopcount = 1;
+};;
+TSwitch {
+ atX = 0.6025;
+ atY = 0.1600;
+ filename = "data\tables\table0001\flips\tf0down.bmp";
+};;
+CollisionForm {
+ atX = 0.7000;
+ atY = 0.1667;
+ k_bounce = 1.0000;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.5950;
+  toY = 0.2000;
+ };;
+ Line {
+  toX = 0.6037;
+  toY = 0.2083;
+ };;
+ Line {
+  toX = 0.6325;
+  toY = 0.2166;
+ };;
+ Line {
+  toX = 0.6487;
+  toY = 0.2150;
+ };;
+ Line {
+  toX = 0.6700;
+  toY = 0.1967;
+ };;
+};;
+Link {
+ from = 150;
+ next = 144;
+ active_element = 148;
+ scores = 20000;
+ big_scores = 200000;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 1;
+ can_resetscores_wbc = 0;
+ change_count = 1;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.300;
+ menu_name = "m003";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 1; to = 38; };
+ To { current_only = 0; to = 149; };
+ To { current_only = 0; to = 147; };
+};;
+Dummy {
+ ;;
+};;
+SoundObj {
+ filename = "data\sfx\3ramp.wav";
+};;
+Teleporter {
+ atX = 0.7025;
+ atY = 0.3283;
+ speedX = -0.0442;
+ speedY = 0.0570;
+ speedValue = 0.5000;
+ timeToRelease = 3.0000;
+};;
+CollisionForm {
+ atX = 0.3200;
+ atY = 0.5650;
+ k_bounce = 0.1900;
+ k_slide = 0.7900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.2263;
+  toY = 0.5383;
+ };;
+ Line {
+  toX = 0.2613;
+  toY = 0.4783;
+ };;
+};;
+Link {
+ from = 155;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 1;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "tunnel";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 154; };
+ To { current_only = 0; to = 45; };
+ To { current_only = 0; to = 153; };
+};;
+Link {
+ from = 155;
+ next = 127;
+ active_element = -1;
+ scores = 50000;
+ big_scores = 500000;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 1;
+ can_resetscores_wbc = 0;
+ change_count = 1;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.500;
+ menu_name = "m007";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 1; to = 38; };
+ To { current_only = 1; to = 124; };
+ To { current_only = 1; to = 114; };
+};;
+Dummy {
+ ;;
+};;
+StaticPicture {
+ filename = "data\tables\table0001\bkgnd.bmp";
+ atX = 0.0000;
+ atY = 0.0000;
+ noTilt = 0;
+};;
+SoundObj {
+ filename = "data\sfx\3bumper2.wav";
+};;
+SoundObj {
+ filename = "data\sfx\3bumper2.wav";
+};;
+Dummy {
+ ;;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.8000;
+ k_slide = 0.1900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.3313;
+  toY = 0.6917;
+ };;
+ Line {
+  toX = 0.3675;
+  toY = 0.7267;
+ };;
+ Line {
+  toX = 0.3950;
+  toY = 0.7833;
+ };;
+};;
+CollisionForm {
+ atX = 0.5000;
+ atY = 0.5000;
+ k_bounce = 0.8000;
+ k_slide = 0.1900;
+ f_type = "OPENED";
+ c_type = "COLLISION_COMBINE";
+ Line {
+  toX = 0.6287;
+  toY = 0.6900;
+ };;
+ Line {
+  toX = 0.5962;
+  toY = 0.7233;
+ };;
+ Line {
+  toX = 0.5688;
+  toY = 0.7717;
+ };;
+};;
+Link {
+ from = 164;
+ next = -1;
+ active_element = -1;
+ scores = 10;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 131; };
+ To { current_only = 0; to = 40; };
+};;
+Link {
+ from = 163;
+ next = -1;
+ active_element = -1;
+ scores = 10;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 72; };
+ To { current_only = 0; to = 41; };
+};;
+SoundObj {
+ filename = "data\sfx\3switch2.wav";
+};;
+SoundObj {
+ filename = "data\sfx\3switch2.wav";
+};;
+Link {
+ from = 10;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 167; };
+};;
+Link {
+ from = 11;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 0.100;
+ menu_name = "";
+ can_set_tres_mode = 0;
+ tres_mode_act_count = 0;
+ tres_scores = 0;
+ tres_time = 0.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 168; };
+};;
+Dummy {
+ ;;
+};;
+Link {
+ from = 116;
+ next = -1;
+ active_element = -1;
+ scores = 0;
+ big_scores = 0;
+ can_activate_menu = 0;
+ can_actmenu_whencurrent = 0;
+ can_resetscores_wbc = 0;
+ change_count = 0;
+ change_step = 0;
+ change_offset = 0;
+ initially_current = 0;
+ time_to_sleep = 3.000;
+ menu_name = "";
+ can_set_tres_mode = 1;
+ tres_mode_act_count = 4;
+ tres_scores = 0;
+ tres_time = 60.000;
+ ee_atstart = 0;
+ ee_cando = 0;
+ ee_invert = 0;
+ ee_time = 5.000;
+ sl_limit = 0;
+ skip_events = 0;
+ change_current_timeout = 0.000;
+ timeout_next = -1;
+ To { current_only = 0; to = 132; };
+ To { current_only = 0; to = 153; };
+ To { current_only = 0; to = 149; };
+ To { current_only = 0; to = 139; };
+ To { current_only = 0; to = 133; };
+ To { current_only = 0; to = 124; };
+ To { current_only = 0; to = 114; };
+ To { current_only = 0; to = 108; };
+ To { current_only = 0; to = 106; };
+ To { current_only = 0; to = 99; };
+ To { current_only = 0; to = 98; };
+ To { current_only = 0; to = 97; };
+ To { current_only = 0; to = 90; };
+ To { current_only = 0; to = 80; };
+ To { current_only = 0; to = 79; };
+ To { current_only = 0; to = 78; };
+ To { current_only = 0; to = 70; };
+ To { current_only = 0; to = 69; };
+ To { current_only = 0; to = 56; };
+ To { current_only = 0; to = 55; };
+ To { current_only = 0; to = 54; };
+ To { current_only = 0; to = 53; };
+ To { current_only = 0; to = 52; };
+ To { current_only = 0; to = 156; };
+ To { current_only = 0; to = 151; };
+ To { current_only = 0; to = 145; };
+ To { current_only = 0; to = 141; };
+ To { current_only = 0; to = 143; };
+ To { current_only = 0; to = 136; };
+ To { current_only = 0; to = 128; };
+ To { current_only = 0; to = 127; };
+ To { current_only = 0; to = 106; };
+ To { current_only = 0; to = 67; };
+ To { current_only = 0; to = 66; };
+ To { current_only = 0; to = 65; };
+ To { current_only = 0; to = 64; };
+ To { current_only = 0; to = 63; };
+};;

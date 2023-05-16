@@ -1,0 +1,24 @@
+input {
+ control {
+  name = "EXIT";
+   device = "SYSTEM_KEYBOARD";
+   devicecode = "ESCAPE"; }; 
+ control {
+  name = "LEFTHANDLE";
+   device = "SYSTEM_KEYBOARD";
+   devicecode = "Z"; }; 
+ control {
+  name = "RIGHTHANDLE";
+   device = "SYSTEM_KEYBOARD";
+   devicecode = "SLASH"; }; 
+ control {
+  name = "SPRING";
+   device = "SYSTEM_KEYBOARD";
+   devicecode = "SPACE"; };
+ control {
+  name = "TILT";
+   device = "SYSTEM_KEYBOARD";
+   devicecode = "A"; };
+};
+
+  

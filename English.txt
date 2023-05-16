@@ -1,0 +1,39 @@
+MegaPinball v1.0
+
+(c) 2000 Megaware Multimedia B.V.
+
+REQUIREMENTS:
+ DirectX 7 compatible video card with 2MB of video RAM
+ DirectX 7.0 or better
+ 32 Megabytes of RAM
+ Pentium 200 Mhz or better
+ 60 Megabytes of free hard-disk space
+ Microsoft Windows 95 , Windows 98 or Windows ME
+ DirectX compatible sound card
+
+RECOMMENDED:
+ 4MB Video card
+ Pentium II 233
+
+
+Default Keys
+
+Space 	- shoot the ball
+z	- left flipper
+/	- right flipper
+a	- Nudge
+Alt+f   - Switch between Full Screen and Windowed mode
+
+Note:
+
+On some ATI Cards it might be possible that there's no mouse 
+pointer in the main menu, or that the screen goes black at the 
+start of the game.
+This is caused due to old/incompatible Drivers from ATI Tech.
+The problem can be solved by clicking start --> Run and then 
+typing dxdiag and clicking ok, now the Direct X Diagnostic 
+program will start, in this program select the "Display" or 
+"Display 1" Tab, on that tab disable the DirectDraw acceleration.
+
+Make sure to Enable Directdraw again when finished playing the game.
+

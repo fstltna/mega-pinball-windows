@@ -1,0 +1,8 @@
+font {
+  filename = "data\fonts\tahoma.fnt";
+  fontname = "msgfnt";
+};
+font {
+  filename = "data\fonts\chicago22.fnt";
+  fontname = "greate";
+};
